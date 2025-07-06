@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Career Goals</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header id="main-header">
+      <h1>Career Goals</h1>
+      <hr />
+      <nav>
+        <ul>
+          <li><a href="/index.html">Resume</a></li>
+          <li><a href="/career-goals.html">Career Goals</a></li>
+          <li><a href="/cover-letter.html">Cover Letter</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="career-goals">
+        <div class="career-goals-img-container">
+            <img
+              id="career-goals-img"
+              src="/assets/standing-in-front-of-building.png"
+              alt="A man holding a laptop staring at a large building."
+            />
+        </div>
+        <div>
+            <h2>My career goals:</h2>
+            <audio controls src="./assets/audio.m4a"></audio>
+            <video controls src="./assets/video.mp4"></video>
+        </div>
+      </section>
+
+      <section class="contact-me">
+        <h2>Contact Me</h2>
+        <form method="POST" action="https://wp.zybooks.com/form-viewer.php">
+            <div class="container">
+                <div>
+                  <label for="first-fame">First Name: </label>
+                  <br>
+                  <input required id="first-name" name="first-name" type="text" />
+                </div>
+                <div>
+                  <label for="last-name">Last Name: </label>
+                  <br>
+                  <input required id="last-name" name="last-name" type="text" />
+                </div>
+                <div>
+                  <label for="company-name">Company Name: </label>
+                  <br>
+                  <input id="company-name" name="company-name" type="text" />
+                </div>
+                <div>
+                  <label for="email">Email: </label>
+                  <br>
+                  <input required id="email" name="email" type="email" />
+                </div>
+                <div>
+                  <label for="phone">Phone Number: </label>
+                  <br>
+                  <input required id="phone" name="phone" type="tel" />
+                </div>
+                <div>
+                  <label for="message">Message: </label>
+                  <br>
+                  <textarea required name="message" id="message"></textarea>
+                </div>
+                <fieldset>
+                  <legend>Best contact time?</legend>
+                  <div>
+                      <input type="radio" name="contact-time" id="am" value="am" />
+                      <label for="am">AM</label>
+                  </div>
+                  <div>
+                      <input type="radio" name="contact-time" id="pm" value="pm" />
+                      <label for="pm">PM</label>
+                  </div>
+                  <div>
+                      <input type="radio" name="contact-time" id="any" value="any" />
+                      <label for="any">Anytime</label>
+                  </div>
+                </fieldset>
+                <div>
+                  <label for="contact-method"
+                    >What is your preferred contact method?</label
+                  >
+                  <br>
+                  <select name="contact-method" id="contact-method">
+                    <option value="phone">Phone</option>
+                    <option value="email">Email</option>
+                    <option value="text">Text Message</option>
+                  </select>
+                </div>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Lane Wofford. All rights reserved.</p>
+      <div class="contact-info">
+        <ul>
+          <li><a href="tel:+11234567890">123-456-7890</a></li>
+          <li><a href="mailto:lwoff11@wgu.edu">lwoff11@wgu.edu</a></li>
+          <li>
+            <a href="https://www.linkedin.com/in/lanewofford" target="_blank"
+              >LinkedIn</a
+            >
+          </li>
+          <li><a href="https://github.com/Lanerbop">GitHub</a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

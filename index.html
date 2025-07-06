@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume</title>
+    <link rel="stylesheet" href="style.css" />
+    <script>
+        // Wait for DOM to load
+        document.addEventListener("DOMContentLoaded", () => {
+            const date = new Date();
+            let day = date.getDate();
+            // 1 is added because months are numbered 0-11 in Date object
+            let month = date.getMonth() + 1;
+            let year = date.getFullYear();
+            let currentDate = `${month}-${day}-${year}`;
+
+            const dateElem = document.querySelector("#current-date");
+            dateElem.textContent += currentDate;
+            // Console.log for rubric purposes
+            console.log("This will be added to the current-date element: " + currentDate);
+        });    
+    </script>
+  </head>
+  <body>
+    <header id="main-header">
+      <h1>Lane Wofford</h1>
+      <time id="current-date" datetime="present">Current Date: </time>
+      <nav>
+        <ul>
+          <li><a href="/index.html">Resume</a></li>
+          <li><a href="/career-goals.html">Career Goals</a></li>
+          <li><a href="/cover-letter.html">Cover Letter</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="education">
+        <h2>EDUCATION</h2>
+        <hr>
+        <article>
+          <header>
+            <div>
+              <h3>Western Governors University</h3>
+              <p>Bachelor of Science in Computer Science</p>
+            </div>
+            <div>
+              <p>Remote</p>
+              <div>
+                <time datetime="2018-07">July 2018</time> &mdash;
+                <time datetime="present">PRESENT</time>
+              </div>
+            </div>
+          </header>
+        </article>
+        <article>
+          <header>
+            <div>
+              <h3>University of Texas at Tyler</h3>
+              <p>Bachelor of Science in Economics</p>
+            </div>
+            <div>
+              <p>Tyler, TX</p>
+              <div>
+                <time datetime="2020-08">August 2020</time> &mdash;
+                <time datetime="2024-05">May 2024</time>
+              </div>
+            </div>
+          </header>
+        </article>
+      </section>
+
+      <section id="experience">
+        <h2>EXPERIENCE</h2>
+        <hr>
+        <article>
+          <header>
+            <div>
+              <h3>AI Data Annotator (Coding + Factuality)</h3>
+              <p class="italic">Data Annotation Tech</p>
+            </div>
+            <div>
+              <time datetime="2024-06">June 2024</time> &mdash;
+              <time datetime="present">PRESENT</time>
+            </div>
+          </header>
+          <ul>
+            <li>
+              Fact-checked 1000+ LLM responses total regarding factuality &
+              programming including languages such as <strong>Python,
+              JavaScript, SQL, Java, and HTML/CSS</strong>, achieving 99% accuracy
+              by writing and running code and reviewing documentation
+            </li>
+            <li>
+              Due to consistently high-quality submissions, in charge of
+              <strong>reviewing</strong> and <strong>rating</strong> other data annotators' submissions to
+              determine whether selections are accurate and are of sufficient
+              quality to include in training data
+            </li>
+          </ul>
+        </article>
+        <article>
+          <header>
+            <div>
+              <h3>AI Data Annotator (Coding)</h3>
+              <p class="italic">Data Annotation Tech</p>
+            </div>
+            <div>
+              <time datetime="2024-04">April 2024</time> &mdash;
+              <time datetime="2024-06">June 2024</time>
+            </div>
+          </header>
+          <ul>
+            <li>
+              Fact-checked 600+ LLM responses total across STEM, history, and
+              legal domains (among others), achieving 99% accuracy by
+              cross-referencing reputable sources and knowledge bases (World
+              Data Bank, government reports)
+            </li>
+            <li>
+              Due to consistently high-quality submissions, in charge of
+              <strong>reviewing</strong> and <strong>rating</strong> other data annotators' submissions to
+              determine whether selections are accurate and are of sufficient
+              quality to include in training data
+            </li>
+          </ul>
+        </article>
+      </section>
+
+      <section id="projects">
+        <h2>PROJECTS</h2>
+        <hr>
+        <article>
+          <header>
+            <h3>
+              Real-Time Stock Trading Web Application<span class="tech-stack">
+                | Python, Flask, HTML, CSS, JavaScript SQLite</span
+              >
+            </h3>
+            <div>
+              <time datetime="2025-03">March 2025</time>
+            </div>
+          </header>
+          <ul>
+            <li>
+              Developed a full-stack web application, simulating a stock trading
+              platform with real-time data integration using the <strong>IEX API</strong>
+            </li>
+            <li>
+              Built the backend using <strong>Python and Flask</strong> to create a RESTful API
+              that handles user authentication, portfolio management, and
+              simulated trading transactions.
+            </li>
+            <li>
+              <em>User authentication</em> was done both client and server-side.
+              Client-side authentication was achieved through HTML attributes
+              and JavaScript logic, while server-side authentication was
+              achieved using Python and SQLite. Passwords were <strong>hashed</strong> to protect
+              personal data.
+            </li>
+            <li>
+              Built the frontend using HTML, CSS, BootStrap, and JavaScript.
+            </li>
+            <li>Employed SQLite for reliable data persistence.</li>
+          </ul>
+        </article>
+        <article>
+          <header>
+            <h3>
+              Etch-A-Sketch<span class="tech-stack">
+                | JavaScript, HTML, CSS, DOM Manipulation, Flexbox</span
+              >
+            </h3>
+            <div>
+              <time datetime="2025-03">March 2025</time>
+            </div>
+          </header>
+          <ul>
+            <li>
+              Developed an interactive, browser-based Etch-A-Sketch application
+              to improve <strong>DOM manipulation and event handling</strong> skills.
+            </li>
+            <li>
+              Constructed a dynamically-sized grid of square div elements using
+              JavaScript, enabling users to draw by hovering over the grid
+              cells.
+            </li>
+            <li>
+              Implemented a hover effect that changes the color of grid cells,
+              allowing users to draw with their mouse.
+            </li>
+            <li>
+              Added a feature allowing users to customize the grid size up to
+              100x100 squares.
+            </li>
+            <li>
+              Utilized <strong>Flexbox</strong> for the layout to ensure a responsive and
+              adaptable design across different screen sizes and devices.
+            </li>
+          </ul>
+        </article>
+      </section>
+
+      <section id="technical-skills">
+        <h2>TECHNICAL SKILLS</h2>
+        <hr>
+        <table>
+            <caption>SKILLS MATRIX<br></caption>
+            <thead>
+                <tr>
+                    <th scope="col">Category</th>
+                    <th scope="col">Skills</th>
+                    <th scope="col">Proficiency</th>
+                    <th scope="col">Experience</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Languages</td>
+                    <td>Java, Python, SQL, JavaScript, HTML/CSS</td>
+                    <td>Intermediate</td>
+                    <td>2 years</td>
+                </tr>
+                <tr>
+                    <td>Frameworks</td>
+                    <td>Spring/SpringBoot, Flank, JUnit</td>
+                    <td>Beginner</td>
+                    <td>1 year</td>
+                </tr>
+            </tbody>
+        </table>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Lane Wofford. All rights reserved.</p>
+      <div class="contact-info">
+        <ul>
+          <li><a href="tel:+11234567890">123-456-7890</a></li>
+          <li><a href="mailto:lwoff11@wgu.edu">lwoff11@wgu.edu</a></li>
+          <li>
+            <a href="https://www.linkedin.com/in/lanewofford" target="_blank"
+              >LinkedIn</a
+            >
+          </li>
+          <li><a href="https://github.com/Lanerbop">GitHub</a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

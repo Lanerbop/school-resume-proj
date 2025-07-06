@@ -1,0 +1,236 @@
+/* CSS RESET */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+:root {
+  line-height: 1.5;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+ol[role="list"], ul[role="list"] {
+  list-style: none;
+  padding-inline: 0;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* CUSTOM CSS */
+
+:root {
+    --background-color: rgb(253, 252, 235);
+    --text-color: rgb(77, 53, 42);
+    --link-hover-color: rgb(212, 163, 61);
+    --background-color-footer: rgb(233, 232, 205);
+}
+
+body {
+    margin: 2.5rem auto;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    max-width: 768px;
+}
+
+hr {
+    border: 1px solid var(--text-color);
+    margin-bottom: 0.5rem;
+}
+
+mark {
+    background-color: var(--link-hover-color);
+}
+
+a {
+    color: var(--text-color);
+}
+
+a:hover {
+    color: var(--link-hover-color);
+    text-decoration: none;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.name {
+    font-weight: bold;
+}
+
+/* HEADER */
+
+#main-header h1 {
+    text-align: center;
+    margin-bottom: 0rem;
+}
+
+h1 ~ time {
+    display: block;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+nav {
+    margin-bottom: 1.5rem;
+}
+
+nav > ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+nav > ul > li {
+    margin: 0 auto;
+}
+
+/* MAIN */
+
+main {
+    margin-bottom: 2rem;
+}
+
+#career-goals {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.career-goals-img-container {
+    margin: 0 1.5rem 1rem 0;
+}
+
+#career-goals-img {
+    width: 250px;
+    margin: 0 auto;
+    border-radius: 4%;
+}
+
+#career-goals audio {
+    margin-top: 1.5rem;
+}
+
+#career-goals video {
+    width: 170px;
+    border-radius: 4%;
+}
+
+main header {
+    display: flex;
+    justify-content: space-between;
+}
+
+main header div:nth-child(2) {
+   text-align: right;
+}
+
+ul {
+    /* Fix horizontal spacing */
+    padding-left: 1.25rem;
+}
+
+time {
+    font-style: italic;
+}
+
+.tech-stack {
+    font-size: 0.875rem;
+}
+
+/* CONTACT ME */
+
+.contact-me h2 {
+    text-align: center;
+}
+
+.contact-me form {
+    background-color: var(--background-color-footer);
+    padding: 1rem;
+    border-radius: 10px;
+    margin: 0 auto;
+    max-width: 400px;
+}
+
+form .container {
+    margin: 0 auto;
+    max-width: 60%;
+}
+
+form > div {
+    margin-bottom: 0.5rem;
+}
+
+.contact-me fieldset {
+    border: none;
+}
+
+form button {
+    margin-top: 1rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 10%;
+    border: 2px solid var(--text-color);
+    background-color: var(--background-color);
+    color: var(--text-color)
+}
+
+/* TECHNICAL SKILLS */
+
+table {
+    border-collapse: collapse;
+}
+
+caption {
+    font-weight: bold;
+}
+
+th, td {
+    border: 2px solid var(--text-color);
+    padding: 4px 6px;
+}
+
+/* REFERENCE LIST */
+
+#reference {
+    margin-top: 1.5rem;
+}
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    background-color: var(--background-color-footer);
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+
+footer ul {
+    margin-top: 0.5rem;
+    list-style: none;
+    display: flex;
+}
+
+footer ul li {
+    margin: 0 auto;
+}
